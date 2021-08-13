@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@layer base {
+    .my-btn {
+        @apply rounded-full border-4 m-16 cursor-pointer bg-myColorFourth-700 text-warmGray-200
+    }
+}

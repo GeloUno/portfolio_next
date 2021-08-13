@@ -1,13 +1,14 @@
 const path = require('path')
 module.exports = {
-  "stories": [
+
+  stories: [
     "../components/**/*.stories.mdx",
     "../components/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-  "addons": [
+  addons: [
+    // "@storybook/addon-postcss",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-postcss"
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
@@ -28,4 +29,5 @@ module.exports = {
     })
     return config
   },
+
 }
