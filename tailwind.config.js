@@ -7,16 +7,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      myColorFirst: "#4073E3",
-      myColorSecond: "#330067",
-      myColorThird: "#B700A4",
-      myColorFourth: colors.fuchsia,
-      ...colors
+
+      fuchsia: colors.fuchsia,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      gray: colors.gray,
     },
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }
