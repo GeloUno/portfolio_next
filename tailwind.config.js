@@ -12,8 +12,14 @@ module.exports = {
       blue: colors.blue,
       indigo: colors.indigo,
       gray: colors.gray,
+      white: colors.white,
     },
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'blobBackgroundMobile': "url('/images/BackgroundSmall.svg')",
+        'blobBackgroundDesktop': "url('/images/Background.svg')",
+      })
+    },
   },
   variants: {
     extend: {
