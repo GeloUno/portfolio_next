@@ -1,8 +1,9 @@
 import Typewriter from 'typewriter-effect';
+import Button, { ButtonClassEnum } from '../button/button';
 
 function HeaderDescription() {
     return (
-        <div className='flex flex-col justify-center text-center min-w-screen min-h-screen  '>
+        <div className='flex flex-col justify-center text-center min-w-screen min-h-screen max-w-md pt-48 '>
 
             <div className=' text-white'>
 
@@ -34,9 +35,24 @@ function HeaderDescription() {
                         <h3 className='text-2xl text-blue-500 self-end'>Developer</h3>
                     </div>
                 </div>
+                <hr className=' block m-5 border-t-4 blue-600 ml-0 w-1/2 border-blue-500' />
             </div>
-
+            <div className='flex flex-col'>
+                <Button
+                    classButton={ButtonClassEnum.PRIMARY}
+                    labelButton='Projects'
+                    link='/projects'
+                    className='w-1/2 self-center my-10'
+                />
+                <Button
+                    classButton={ButtonClassEnum.SECONDARY}
+                    labelButton='Contact'
+                    link='/contact'
+                    className='w-1/2 self-center my-10'
+                />
+            </div>
         </div>
+
     );
 }
 
