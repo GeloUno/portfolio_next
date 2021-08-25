@@ -3,7 +3,7 @@ import Button, { ButtonClassEnum } from '../button/button';
 
 function HeaderDescription() {
     return (
-        <div className='flex flex-col justify-center text-center min-w-screen min-h-screen max-w-md pt-48 '>
+        <div className='flex flex-col justify-center text-center min-w-screen min-h-screen max-w-md sm:max-w-3xl lg:max-w-5xl pt-48 '>
 
             <div className=' text-white'>
 
@@ -42,13 +42,13 @@ function HeaderDescription() {
                     classButton={ButtonClassEnum.PRIMARY}
                     labelButton='Projects'
                     link='/projects'
-                    className='w-1/2 self-center my-10'
+                    className='w-1/2 sm:w-1/3 self-center my-10'
                 />
                 <Button
                     classButton={ButtonClassEnum.SECONDARY}
                     labelButton='Contact'
                     link='/contact'
-                    className='w-1/2 self-center my-10'
+                    className='w-1/2 sm:w-1/3 self-center my-10'
                 />
             </div>
         </div>
