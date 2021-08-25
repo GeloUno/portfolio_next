@@ -1,4 +1,4 @@
-
+import Typewriter from 'typewriter-effect';
 
 function HeaderDescription() {
     return (
@@ -12,7 +12,16 @@ function HeaderDescription() {
                         <h2 className='text-3xl'>I'm your</h2>
                     </div>
                     <div className='flex justify-center w-32' >
-                        <h1 className='text-5xl start'>React</h1>
+                        <h1 className='text-5xl start'>
+                            <Typewriter
+                                options={{
+                                    strings: ['React', 'Next', 'Node'],
+                                    autoStart: true,
+                                    loop: true,
+                                    cursor: ''
+                                }}
+                            />
+                        </h1>
                     </div>
                 </div>
 
