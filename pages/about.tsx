@@ -1,6 +1,8 @@
+import classes from '../styles/globals.module.css'
+
 function AboutPage() {
     return (
-        <div>
+        <div className={classes.myContainer}>
             AboutPage
         </div>
     );
