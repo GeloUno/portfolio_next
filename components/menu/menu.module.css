@@ -1,0 +1,3 @@
+.myLink {
+    @apply py-4 cursor-pointer hover:text-white transition ease-in-out duration-500 self-center w-32
+}
