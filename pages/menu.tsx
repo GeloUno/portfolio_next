@@ -1,10 +1,10 @@
 
 import MenuComponent from './../components/menu/menu';
-function Menu() {
+function MenuPage() {
 
     return (
         <MenuComponent />
     );
 }
 
-export default Menu;
+export default MenuPage;
