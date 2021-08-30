@@ -1,9 +1,16 @@
 import Link from 'next/link';
 import { HTMLAttributes } from 'react';
 import classes from './button.module.css'
+
 export enum ButtonClassEnum {
     PRIMARY = 'myBtnColorPrimary',
     SECONDARY = 'myBtnColorSecondary'
+}
+
+export interface IMailTo {
+    email: string,
+    subject?: string,
+
 }
 
 export interface IButtonProps {
@@ -12,6 +19,7 @@ export interface IButtonProps {
     className?: string,
     onClick?: Function,
     link?: string,
+    mailto?: IMailTo,
 }
 
 function Button({
@@ -19,13 +27,26 @@ function Button({
     classButton,
     onClick,
     link,
-    className }: IButtonProps) {
+    className,
+    mailto }: IButtonProps) {
 
     function onClickHandler(event: React.MouseEvent<HTMLButtonElement>) {
-        event.preventDefault()       
+        event.preventDefault()
         onClick && onClick()
     }
+    if (mailto) {
+        return (
+            <Link href='#'>
+                <a
+                    href={`mailto:${mailto.email} ${mailto.subject && `?subject=${mailto.subject}`}`}
+                    target='_blank'
+                    data-testid="buttonLinkMailTo"
+                    className={`${classes.mybtn} ${classes[classButton]} ${className ? className : ""} `}
 
+                > {labelButton}</a>
+            </Link>
+        )
+    }
 
     if (link) {
         return (
