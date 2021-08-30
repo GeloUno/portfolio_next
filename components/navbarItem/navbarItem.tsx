@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MenuIcon, XIcon } from '@heroicons/react/solid';
+import { MenuIcon, XIcon, ArrowNarrowLeftIcon } from '@heroicons/react/solid';
 import { Fragment, MouseEventHandler } from 'react';
 import classes from './navbarItem.module.css'
 
@@ -28,17 +28,19 @@ interface INavbarItemProps {
     pathname: string,
     handlerClickOpenMenu: MouseEventHandler,
     handlerClickCloseMenu: MouseEventHandler,
+    handlerClickGoBack: MouseEventHandler,
 }
 
 function NavbarItem({
     pathname,
     handlerClickCloseMenu,
-    handlerClickOpenMenu
+    handlerClickOpenMenu,
+    handlerClickGoBack
 }: INavbarItemProps) {
 
     return (
         <div className='
-        fixed 
+        absolute 
         flex 
         flex-row 
         text-gray-300 
@@ -58,7 +60,7 @@ function NavbarItem({
             font-medium
             tracking-widest
             '>
-                {pathname !== '/menu' && <Fragment>
+                {pathname === '/' && <Fragment>
                     <Link href='/'>
                         <div className='h-5 text-blue-500 cursor-pointer'>Hello</div>
                     </Link>
@@ -67,13 +69,23 @@ function NavbarItem({
                     </Link>
                 </Fragment>
                 }
+                {pathname !== '/' && <Fragment>
+                    <ArrowNarrowLeftIcon
+                        className={`${classes.myIcon}`}
+                        onClick={handlerClickGoBack} />
+                </Fragment>
+                }
             </div>
             <div className='flex h-10 items-center text-xl'>
 
-                {swichIconMenu(pathname, handlerClickOpenMenu, handlerClickCloseMenu)}
-
+                {swichIconMenu(
+                    pathname,
+                    handlerClickOpenMenu,
+                    handlerClickCloseMenu
+                )}
 
             </div>
+
         </div>
     );
 }
