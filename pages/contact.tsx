@@ -25,7 +25,7 @@ const contact =
     // bg-opacity-60
     // style={{ backdropFilter: "blur(20px)" }}
     >
-        <h3 className='p-7'>I am always open to new business relationships. Please just send me an email. I guarantee that I will reply to all e-mails.
+        <h3 className='p-7'>I am always open to make new business relationships. Please just send me an email. I guarantee I will send You an answer.
         </h3>
 
         <div className='flex justify-center p-7'>
@@ -45,8 +45,8 @@ const contact =
         </Link> */}
 
         <p className='p-7 text-xs'>
-            *if you have any trouble to send email.
-            Example: application of email not open. Please make sure that You have set email default client app  in windows 10.
+            *if you have trouble sending an email.
+            For example: the email client doesn't open. Please make sure you have set your default client email in windows 10.
         </p>
     </div>
     )

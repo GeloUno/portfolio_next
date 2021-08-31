@@ -5,10 +5,15 @@ import { IProject } from '../models/IProject';
 const projects: Array<IProject> = [
     {
         title: "Hors Farm",
-        description: `This project use four servers frontend, backend, firebase auth and mongodb,
-        This part is about frontend.
-        I start this project with javascript. Added, fixed and modificationed public liblary react-horizontal-scroll for my calendary of reservation view. Added Redux as store and Fomik and Yup for forms. A few month later I decided to up this project to TypeScript. Now is 88% override to TS. Added Enzyme, Testing Library and CypressIO. Now is more than 1000 tests. Web.dev: SEO 91% BestPractices 100% Accessibility 90% Preformance need change image to webp.
-        This project don't have ded line end. When I finish one functionlity I think I can add two more so this project is like no ending story`,
+        description: `This project uses four servers: Frontend, Backend, Firebase Auth, and MongoDB.
+        This part is about the frontend.
+        I started this project in JavaScript technology.
+        In this project I have used the react-horizontal-scroll library. This library has been repaired and modified by me for the booking calendar.
+        Then added Redux as store and Formik and Yup for forms. A few months later, I decided to convert this project to TypeScript. Now there are 88% overwritten on TS.
+        Enzyme, Test Library and CypressIO were added to the Project. The project already has over a thousand tests.
+        Measure from Web.dev: SEO 91% BestPractices 100% Availability 90% Performance: requires image change to webp.
+        This project is endless. When I finish one method I think I can add two more so this project is like a never ending story`,
+
         github: 'https://github.com/GeloUno/horse_farm',
         image: 'LoginHorse.png',
         technology: [
@@ -23,6 +28,7 @@ const projects: Array<IProject> = [
             ETechnology.FIREBASEAUTH,
             ETechnology.GIMP,
             ETechnology.ADOBEXD,
+
         ],
         web: 'https://gelouno.github.io/horse_farm/'
     },
