@@ -25,7 +25,7 @@ const contact =
     // bg-opacity-60
     // style={{ backdropFilter: "blur(20px)" }}
     >
-        <h3 className='p-7'>I always open to to get new business relationship. Just send me e-mail. I will always give you message back.
+        <h3 className='p-7'>I am always open to new business relationships. Please just send me an email. I guarantee that I will reply to all e-mails.
         </h3>
 
         <div className='flex justify-center p-7'>
