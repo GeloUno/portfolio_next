@@ -29,7 +29,7 @@ const projects: Array<IProject> = [
     {
         title: "Hors Farm",
         description: 'This is a part of horse farm backend server in node.js. I start this project in TypeScript. This server connect to mongoDB using mongoose solution. Endpoint is tested by Postman. Classes and functionality are tested by Jest. When I will back to this project I will add super test. One of big solution is security of the users so not everything is shered to github, mouch more is in heroku server.',
-        github: '',
+        github: 'https://github.com/GeloUno/dev_server_node',
         image: 'SinginHorse.png',
         technology: [
             ETechnology.NODETS,
@@ -54,7 +54,7 @@ const projects: Array<IProject> = [
             ETechnology.TAILWINDCSS,
             ETechnology.VERCEL,
         ],
-        web: '',
+        web: 'https://hellogello.vercel.app/',
         github: 'https://github.com/GeloUno/portfolio_next'
     },
     {

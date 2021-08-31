@@ -14,26 +14,6 @@ interface IProjectDetailPageProps {
 
 function ProjectDetailPage({ project, error }: IProjectDetailPageProps) {
 
-    // const router = useRouter()
-   
-
-    // const projectId = (router.query.projectId);
-
-    // if (projectId == undefined) {
-    //     return (
-    //         <ErrorView description={'project no found'} />
-    //     )
-    // }
-
-    // if (Array.isArray(projectId)) {
-    //     return (
-    //         <ErrorView description={'Invalid data'} />
-    //     )
-    // }
-
-    // const numberProject = +projectId
-
-    // const project = getProject(numberProject)
 
     if (error) {
         return (
@@ -51,7 +31,7 @@ function ProjectDetailPage({ project, error }: IProjectDetailPageProps) {
 
     return (
         <Container
-            title={'Project detail'}
+            title={'Project details'}
             switchHorizontalView={false}
         >
             <DetailProject project={project} />
