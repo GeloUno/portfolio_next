@@ -11,7 +11,9 @@ function LayoutPage({ children }: ILayoutPageProps) {
         <Fragment>
             <Head>
                 <title>G.K. Developer</title>
-                <meta name='description' content='G.K. Developer, React Developer, Next Developer, Node Developer, friendly developer react, friendly developer next, friendly developer node' />
+                <meta name='description' content={`I'm Your friendly React.js, Next.js, Node.js developer.`} />
+                <meta name='author' content='Grzegorz Kędziora' />
+                <meta name='keywords' content='react, next, node, developer, fullstack, web builder,' />
             </Head>
             <Navbar />
             <main>{children}</main>
