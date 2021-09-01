@@ -27,13 +27,11 @@ function swichIconMenu(
 interface INavbarItemProps {
     pathname: string,
     handlerClickOpenMenu: MouseEventHandler,
-    handlerClickCloseMenu: MouseEventHandler,
     handlerClickGoBack: MouseEventHandler,
 }
 
 function NavbarItem({
     pathname,
-    handlerClickCloseMenu,
     handlerClickOpenMenu,
     handlerClickGoBack
 }: INavbarItemProps) {
@@ -62,10 +60,10 @@ function NavbarItem({
             '>
                 {pathname === '/' && <Fragment>
                     <Link href='/'>
-                        <div className='h-5 text-blue-500 cursor-pointer'>Hello</div>
+                        <div className='h-5 text-blue-500 cursor-pointer'>Grzegorz</div>
                     </Link>
                     <Link href='/'>
-                        <div className='h-5 text-fuchsia-500 cursor-pointer'>Gello</div>
+                        <div className='h-5 text-fuchsia-500 cursor-pointer'>Kędziora</div>
                     </Link>
                 </Fragment>
                 }
@@ -81,7 +79,7 @@ function NavbarItem({
                 {swichIconMenu(
                     pathname,
                     handlerClickOpenMenu,
-                    handlerClickCloseMenu
+                    handlerClickGoBack
                 )}
 
             </div>
