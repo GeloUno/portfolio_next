@@ -15,10 +15,10 @@ function About() {
         items-center  '>
 
             <h3 className='p-7'>
-                Since I was a child, I was interested in everything related to computers. Many people come to me and consult me on what solution to choose. But my way of life has gone the other way. A few years ago, I decided it was time to combine my passion with work. The first step was to start a second computer science study.
+                I have been interested in everything related to computers since I was a child. Many people came to me and asked what solution to choose. But my way of life went in a different direction, not related to the passion of life. A few years ago I made a decision that it was time to combine work with passion. The first step was to completed second computer science studies
             </h3>
             <h3 className='p-7'>
-                now I am a programmer by education and passion
+                Now I am a programmer with passion and education.
             </h3>
             <h3 className='p-7'>
                 As for TypeScript, I don't like it, I love it!

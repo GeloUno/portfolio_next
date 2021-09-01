@@ -43,7 +43,7 @@ function DetailProject({ project: {
                 {title}
             </div>
             <div className=' px-6'>
-                {description}
+                {Array.isArray(description) ? (description.map((des) => (<h3 key={des} className={`pb-2`}>{des}</h3>))) : (<h3>{description}</h3>)}
             </div>
             <div className=' flex flex-wrap m-5 justify-around'>
                 {technology.map(tech => {

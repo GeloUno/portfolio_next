@@ -10,9 +10,7 @@ function Navbar() {
     function handlerClickOpenMenu() {
         push('/menu')
     }
-    function handlerClickCloseMenu() {
-        push('/')
-    }
+
     function handlerClickGoBack() {
         back()
     }
@@ -21,7 +19,6 @@ function Navbar() {
         <NavbarItem
             pathname={pathname}
             handlerClickOpenMenu={handlerClickOpenMenu}
-            handlerClickCloseMenu={handlerClickCloseMenu}
             handlerClickGoBack={handlerClickGoBack}
         />
     );

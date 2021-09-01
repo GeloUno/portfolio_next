@@ -5,14 +5,14 @@ import { IProject } from '../models/IProject';
 const projects: Array<IProject> = [
     {
         title: "Hors Farm",
-        description: `This project uses four servers: Frontend, Backend, Firebase Auth, and MongoDB.
-        This part is about the frontend.
-        I started this project in JavaScript technology.
-        In this project I have used the react-horizontal-scroll library. This library has been repaired and modified by me for the booking calendar.
-        Then added Redux as store and Formik and Yup for forms. A few months later, I decided to convert this project to TypeScript. Now there are 88% overwritten on TS.
-        Enzyme, Test Library and CypressIO were added to the Project. The project already has over a thousand tests.
-        Measure from Web.dev: SEO 91% BestPractices 100% Availability 90% Performance: requires image change to webp.
-        This project is endless. When I finish one method I think I can add two more so this project is like a never ending story`,
+        description: [`This is one of my biggest projects. This project uses four servers: Frontend, Backend, Firebase Auth, and MongoDB.`,
+            `This part is about the frontend.
+            I started this project in JavaScript technology.`,
+            `In this project I have used the react-horizontal-scroll library. This library has been repaired and modified by me for the booking calendar view.`,
+            `The next step was to add Redux as a store. Formik and Yup were used to handle the forms. A few months later, I decided to convert this project to TypeScript. Now there are 88% overwritten to TS.`,
+            `The Enzyme, Testing Library and CypressIO have also been added to the project. Currently, there are over a thousand tests.`,
+            `Measure from Web.dev: SEO 91% BestPractices 100% Availability 90% Performance: requires image change to webp.`,
+            `This project is endless. When I finish one functionality I think I can add two more so this project is like a never ending story`],
 
         github: 'https://github.com/GeloUno/horse_farm',
         image: 'LoginHorse.png',
@@ -34,7 +34,8 @@ const projects: Array<IProject> = [
     },
     {
         title: "Hors Farm",
-        description: 'This is a part of horse farm backend server in node.js. I start this project in TypeScript. This server connect to mongoDB using mongoose solution. Endpoint is tested by Postman. Classes and functionality are tested by Jest. When I will back to this project I will add super test. One of big solution is security of the users so not everything is shered to github, mouch more is in heroku server.',
+        description: [`This is a part of horse farm backend server in node.js.`,
+            `I started this project in TypeScript. This server connect to mongoDB using mongoose solution. Endpoints were tested by Postman. Classes and functionality have been tested by Jest. When I will back to this project I will add SuperTest.`, ` One of big solution is security of the users so not everything is shared to github, much more is in heroku server.`],
         github: 'https://github.com/GeloUno/dev_server_node',
         image: 'SinginHorse.png',
         technology: [
@@ -51,7 +52,7 @@ const projects: Array<IProject> = [
     },
     {
         title: "Portfolio",
-        description: `This project was built with idea "nice to have". So I built him easy and fast. I used Next.js with static props and static path. This is no e-commerce project so I don't need server side props. Core Node version 14.17 rest dependencies is in package.json.`,
+        description: [`This project was built with the idea "nice to have it".`, ` So I built it simple and fast.`, ` I used next.js with static props and static path. This is not an e-commers project so no server side props solution was needed. Core Node version 14.17 rest dependencies is in package.json.`],
         image: 'portfolio.png',
         technology: [
             ETechnology.TYPESCRIPT,
@@ -65,7 +66,7 @@ const projects: Array<IProject> = [
     },
     {
         title: "Events",
-        description: 'This is a practice project to get knowledge about Next.js. In original was write in JavaScript from my side this project was write in MVC pattern and TypeScript. This project connect to real time data base  firebase. One of the interesting solutions is how use useSWR hook with SSR. Core Node version 14.17 rest dependencies is in package.json.',
+        description: 'This is a training project to learn about next.js. The training was conducted in JavaScript technology. On my part, the project was written in the MVC design pattern and TypeScript. This project connects to a real-time database Firebase. One of the interesting solutions is how to use a hook SWR with SSR. Core Node version 14.17 rest dependencies is in package.json.',
         github: 'https://github.com/GeloUno/EventsNext',
         image: 'Events.jpg',
 
@@ -80,7 +81,7 @@ const projects: Array<IProject> = [
     },
     {
         title: "Next Auth",
-        description: 'This is a practice project to get knowledge about Next.js and NextAuth.js. In original was write in JavaScript from my side this project was write in MVC pattern and TypeScript. Core Node version 14.17 rest dependencies is in package.json.',
+        description: 'This is a training project to learn about Next.js and NextAuth.js. The training was conducted in JavaScript technology. On my part, the project was written in the MVC design pattern and TypeScript. Core Node version 14.17 rest dependencies is in package.json.',
         github: 'https://github.com/GeloUno/next_auth',
         image: 'NextAuth.png',
 
@@ -94,7 +95,7 @@ const projects: Array<IProject> = [
     },
     {
         title: "miniFacbook",
-        description: 'This is practic project to get knowleg about React.',
+        description: 'This is a training project to learn about React.js',
         github: 'https://github.com/GeloUno/dev_client_react_redux_hooks',
         image: 'miniFacbook.jpg',
 
@@ -109,7 +110,7 @@ const projects: Array<IProject> = [
     },
     {
         title: "miniFacbook",
-        description: 'This is practic project to get knowleg about Node.js.',
+        description: 'this is a training project to learn about Node.js.',
         github: 'https://github.com/GeloUno/dev_server_node',
         image: 'miniFacbook.jpg',
 
@@ -124,15 +125,15 @@ const projects: Array<IProject> = [
         web: ''
     },
     {
-        title: "Another",
-        description: 'On my github You can find many of project build since 2018. Not every project is in master or main branch. There is a few projects build in Java no used clean conde and some projects with React Native or Angular 6.0 too',
+        title: "Other projects",
+        description: 'In my github you can find many projects since 2018. Not all are in the master or main branch. Most of these projects were not built with clean code principles. Some projects were written in Angular 6.0, Java, ReactNative, PHP',
         github: 'https://github.com/GeloUno?tab=repositories',
         image: 'Octocat.png',
 
         technology: [
+            ETechnology.ANGULAR,
             ETechnology.JAVA,
             ETechnology.REACTNATIVE,
-            ETechnology.ANGULAR,
             ETechnology.PHP,
         ],
         web: ''
