@@ -11,7 +11,7 @@ interface IProjectsPageProps {
 function ProjectsPage({ projects }: IProjectsPageProps) {
     return (
         <Container
-            title={'list of projects'}
+            title={'List of projects'}
             switchHorizontalView={false}
         >
             <Projectslist projects={projects} />
