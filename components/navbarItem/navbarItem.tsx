@@ -11,15 +11,19 @@ function swichIconMenu(
 
     if (pathname === '/menu') {
         return (
-            <XIcon
-                className={classes.myIcon}
-                onClick={handlerClickCloseMenu} />
+            <li>
+                <XIcon
+                    className={classes.myIcon}
+                    onClick={handlerClickCloseMenu} />
+            </li>
         )
     }
     return (
-        <MenuIcon
-            className={classes.myIcon}
-            onClick={handlerClickOpenMenu} />
+        <li>
+            <MenuIcon
+                className={classes.myIcon}
+                onClick={handlerClickOpenMenu} />
+        </li>
     )
 }
 
@@ -37,7 +41,7 @@ function NavbarItem({
 }: INavbarItemProps) {
 
     return (
-        <div className='
+        <nav className='
         absolute 
         flex 
         flex-row 
@@ -50,7 +54,7 @@ function NavbarItem({
         content-center 
         w-full'>
 
-            <div className='
+            <ul className='
             flex 
             flex-col 
             h-20 
@@ -60,10 +64,10 @@ function NavbarItem({
             '>
                 {pathname === '/' && <Fragment>
                     <Link href='/'>
-                        <div className='h-5 text-blue-500 cursor-pointer'>Grzegorz</div>
+                        <li className='h-5 text-blue-500 cursor-pointer'>Grzegorz</li>
                     </Link>
                     <Link href='/'>
-                        <div className='h-5 text-fuchsia-500 cursor-pointer'>Kędziora</div>
+                        <li className='h-5 text-fuchsia-500 cursor-pointer'>Kędziora</li>
                     </Link>
                 </Fragment>
                 }
@@ -73,8 +77,8 @@ function NavbarItem({
                         onClick={handlerClickGoBack} />
                 </Fragment>
                 }
-            </div>
-            <div className='flex h-10 items-center text-xl'>
+            </ul>
+            <ul className='flex h-10 items-center text-xl'>
 
                 {swichIconMenu(
                     pathname,
@@ -82,9 +86,9 @@ function NavbarItem({
                     handlerClickGoBack
                 )}
 
-            </div>
+            </ul>
 
-        </div>
+        </nav>
     );
 }
 
