@@ -11,7 +11,7 @@ const projects: Array<IProject> = [
             `In this project I have used the react-horizontal-scroll library. This library has been repaired and modified by me for the booking calendar view.`,
             `The next step was to add Redux as a store. Formik and Yup were used to handle the forms. A few months later, I decided to convert this project to TypeScript. Now there are 88% overwritten to TS.`,
             `The Enzyme, Testing Library and CypressIO have also been added to the project. Currently, there are over a thousand tests.`,
-            `Measure from Web.dev: SEO 91% BestPractices 100% Availability 90% Performance: requires image change to webp.`,
+            `Measure from Web.dev: SEO 91%, Best Practices 100%, Accessibility 90%, Performance: requires image change to webp.`,
             `This project is endless. When I finish one functionality I think I can add two more so this project is like a never ending story`],
 
         github: 'https://github.com/GeloUno/horse_farm',
@@ -52,7 +52,9 @@ const projects: Array<IProject> = [
     },
     {
         title: "Portfolio",
-        description: [`This project was built with the idea "nice to have it".`, ` So I built it simple and fast.`, ` I used next.js with static props and static path. This is not an e-commers project so no server side props solution was needed. Core Node version 14.17 rest dependencies is in package.json.`],
+        description: [`This project was built with the idea "nice to have it".`, ` So I built it simple and fast.`, ` I used next.js with static props and static path. This is not an e-commers project so no server side props solution was needed.`,
+            `Measure from Web.dev:`, ` Performance: 99%`, ` Accessibility: 100%,`, ` Best Practices: 100%,`, ` SEO: 100%`,
+            `Core Node version 14.17 rest dependencies is in package.json.`],
         image: 'portfolio.png',
         technology: [
             ETechnology.TYPESCRIPT,

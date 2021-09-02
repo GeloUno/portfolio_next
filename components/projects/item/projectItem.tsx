@@ -23,22 +23,22 @@ function ProjectItem(
         <div className='
         flex 
         flex-row        
-        bg-cyan-600 
+        bg-cyan-700 
         even:bg-cyan-100  
-        even:text-cyan-600 
+        even:text-cyan-700 
         my-5  
         rounded-lg 
         uppercase  
         w-full
         max-w-2xl
-                     
+        font-medium        
         '>
-            <div className='h-28 w-28  rounded-l-lg  '>
+            <div className='h-32 w-28  rounded-l-lg  '>
                 {image && (<Image
                     src={`/images/projects/${image}`}
                     alt={`image of project ${title}`}
-                    width={250}
-                    height={250}
+                    width={112}
+                    height={128}
                     className='rounded-l-lg object-cover'
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/${image}`}
@@ -46,14 +46,14 @@ function ProjectItem(
                 {!image && (<Image
                     src={`/images/projects/noImage.jpg`}
                     alt={`image of project ${title}`}
-                    width={250}
-                    height={250}
+                    width={112}
+                    height={128}
                     className='rounded-l-lg object-cover'
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/noImage.jpg`}
                 />)}
             </div>
-            <div className='h-28 flex flex-col flex-grow  '>
+            <div className='h-32 flex flex-col flex-grow p-1 '>
                 <div className='flex self-auto justify-center'>
                     {title}
                 </div>

@@ -14,12 +14,12 @@ function FirstFourTechnologyImage({ technology }: IFirstFourTechnologyImageProps
 
             {firstfourTech.map(tech => {
                 return (
-                    <div className='flex p-1 w-8 h-8 sm:w-16 sm:h-16' key={`logo of ${tech}`}>
+                    <div className='flex p-1 w-10 h-10 sm:w-16 sm:h-16' key={`logo of ${tech}`}>
                         <Image
                             src={`/images/technology/${tech}.svg`}
                             width={40}
                             height={40}
-                            alt={`${tech}`}
+                            alt={`technology image ${tech}`}
                         />
                     </div>
                 )

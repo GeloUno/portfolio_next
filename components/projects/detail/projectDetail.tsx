@@ -16,7 +16,7 @@ function DetailProject({ project: {
     return (
         <div className='flex 
         flex-col        
-        text-cyan-600 
+        text-cyan-700 
         bg-cyan-100 
         my-5  
         mt-12
@@ -25,17 +25,18 @@ function DetailProject({ project: {
         h-full
         max-w-2xl
         items-center  
-       
+        font-medium
         '>
             {image &&
                 <div className='flex w-28 h-28 relative -top-14 mt-4'>
                     <Image
                         src={`/images/projects/${image}`}
-                        width={250}
-                        height={250}
-                        placeholder={'blur'}
-                        blurDataURL={`/images/projects/${image}`}
+                        width={112}
+                        height={112}
+                        // placeholder={'blur'}
+                        // blurDataURL={`/images/projects/${image}`}
                         className='rounded-lg object-cover'
+                        alt={`Project image ${image}`}
                     />
                 </div>
             }
@@ -48,13 +49,14 @@ function DetailProject({ project: {
             <div className=' flex flex-wrap m-5 justify-around'>
                 {technology.map(tech => {
                     return (
-                        <div key={tech} className='flex flex-col w-20 h-20 p-2 m-2 items-center'>
+                        <div key={tech} className='flex flex-col w-20 h-20 p-3 m-3 items-center'>
                             <div className='flex text-center w-8 h-8'>
 
                                 <Image
                                     src={`/images/technology/${tech}.svg`}
-                                    height={100}
-                                    width={100}
+                                    height={32}
+                                    width={32}
+                                    alt={`Technology image ${tech}`}
                                 />
                             </div>
                             <h3>
@@ -65,7 +67,7 @@ function DetailProject({ project: {
                     )
                 })}
             </div>
-            <div className='flex flex-row bg-cyan-600 text-cyan-100  h-16 w-full rounded-b-lg justify-around items-center  '>
+            <div className='flex flex-row bg-cyan-700 text-cyan-100  h-16 w-full rounded-b-lg justify-around items-center '>
                 {github &&
                     <Link href={``}>
                         <a
@@ -77,6 +79,7 @@ function DetailProject({ project: {
                                 <Image src='/icons/github.svg'
                                     height={100}
                                     width={100}
+                                    alt={`github icon link`}
                                 />
                             </div>
                         </a>
@@ -93,6 +96,7 @@ function DetailProject({ project: {
                                 <Image src='/icons/web.svg'
                                     height={100}
                                     width={100}
+                                    alt={`web icon link`}
                                 />
                             </div>
                         </a>
