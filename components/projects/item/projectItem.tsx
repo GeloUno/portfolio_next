@@ -23,15 +23,15 @@ function ProjectItem(
         <div className='
         flex 
         flex-row        
-        bg-cyan-600 
+        bg-cyan-700 
         even:bg-cyan-100  
-        even:text-cyan-600 
+        even:text-cyan-700 
         my-5  
         rounded-lg 
         uppercase  
         w-full
         max-w-2xl
-                     
+        font-medium        
         '>
             <div className='h-28 w-28  rounded-l-lg  '>
                 {image && (<Image

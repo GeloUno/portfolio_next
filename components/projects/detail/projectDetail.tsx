@@ -67,7 +67,7 @@ function DetailProject({ project: {
                     )
                 })}
             </div>
-            <div className='flex flex-row bg-cyan-600 text-cyan-100  h-16 w-full rounded-b-lg justify-around items-center  '>
+            <div className='flex flex-row bg-cyan-700 text-cyan-100  h-16 w-full rounded-b-lg justify-around items-center font-medium'>
                 {github &&
                     <Link href={``}>
                         <a
