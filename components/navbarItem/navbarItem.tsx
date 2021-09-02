@@ -11,19 +11,19 @@ function swichIconMenu(
 
     if (pathname === '/menu') {
         return (
-            <li>
+            <div>
                 <XIcon
                     className={classes.myIcon}
                     onClick={handlerClickCloseMenu} />
-            </li>
+            </div>
         )
     }
     return (
-        <li>
+        <div>
             <MenuIcon
                 className={classes.myIcon}
                 onClick={handlerClickOpenMenu} />
-        </li>
+        </div>
     )
 }
 
@@ -54,7 +54,7 @@ function NavbarItem({
         content-center 
         w-full'>
 
-            <ul className='
+            <div className='
             flex 
             flex-col 
             h-20 
@@ -77,8 +77,8 @@ function NavbarItem({
                         onClick={handlerClickGoBack} />
                 </Fragment>
                 }
-            </ul>
-            <ul className='flex h-10 items-center text-xl'>
+            </div>
+            <div className='flex h-10 items-center text-xl'>
 
                 {swichIconMenu(
                     pathname,
@@ -86,7 +86,7 @@ function NavbarItem({
                     handlerClickGoBack
                 )}
 
-            </ul>
+            </div>
 
         </nav>
     );
