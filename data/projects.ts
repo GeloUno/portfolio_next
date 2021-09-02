@@ -52,7 +52,8 @@ const projects: Array<IProject> = [
     },
     {
         title: "Portfolio",
-        description: [`This project was built with the idea "nice to have it".`, ` So I built it simple and fast.`, ` I used next.js with static props and static path. This is not an e-commers project so no server side props solution was needed. Core Node version 14.17 rest dependencies is in package.json.`],
+        description: [`This project was built with the idea "nice to have it".`, ` So I built it simple and fast.`, ` I used next.js with static props and static path. This is not an e-commers project so no server side props solution was needed.`, ` 
+        Core Node version 14.17 rest dependencies is in package.json.`],
         image: 'portfolio.png',
         technology: [
             ETechnology.TYPESCRIPT,
