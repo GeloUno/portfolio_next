@@ -49,7 +49,7 @@ function DetailProject({ project: {
             <div className=' flex flex-wrap m-5 justify-around'>
                 {technology.map(tech => {
                     return (
-                        <div key={tech} className='flex flex-col w-20 h-20 p-2 m-2 items-center'>
+                        <div key={tech} className='flex flex-col w-20 h-20 p-3 m-3 items-center'>
                             <div className='flex text-center w-8 h-8'>
 
                                 <Image
