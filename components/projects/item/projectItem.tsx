@@ -33,12 +33,12 @@ function ProjectItem(
         max-w-2xl
         font-medium        
         '>
-            <div className='h-28 w-28  rounded-l-lg  '>
+            <div className='h-32 w-28  rounded-l-lg  '>
                 {image && (<Image
                     src={`/images/projects/${image}`}
                     alt={`image of project ${title}`}
                     width={112}
-                    height={112}
+                    height={128}
                     className='rounded-l-lg object-cover'
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/${image}`}
@@ -47,13 +47,13 @@ function ProjectItem(
                     src={`/images/projects/noImage.jpg`}
                     alt={`image of project ${title}`}
                     width={112}
-                    height={112}
+                    height={128}
                     className='rounded-l-lg object-cover'
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/noImage.jpg`}
                 />)}
             </div>
-            <div className='h-28 flex flex-col flex-grow  '>
+            <div className='h-32 flex flex-col flex-grow p-1 '>
                 <div className='flex self-auto justify-center'>
                     {title}
                 </div>
