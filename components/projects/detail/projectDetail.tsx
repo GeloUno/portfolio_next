@@ -31,10 +31,10 @@ function DetailProject({ project: {
                 <div className='flex w-28 h-28 relative -top-14 mt-4'>
                     <Image
                         src={`/images/projects/${image}`}
-                        width={250}
-                        height={250}
-                        placeholder={'blur'}
-                        blurDataURL={`/images/projects/${image}`}
+                        width={112}
+                        height={112}
+                        // placeholder={'blur'}
+                        // blurDataURL={`/images/projects/${image}`}
                         className='rounded-lg object-cover'
                     />
                 </div>
@@ -53,8 +53,8 @@ function DetailProject({ project: {
 
                                 <Image
                                     src={`/images/technology/${tech}.svg`}
-                                    height={100}
-                                    width={100}
+                                    height={32}
+                                    width={32}
                                 />
                             </div>
                             <h3>
