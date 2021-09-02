@@ -25,7 +25,7 @@ function DetailProject({ project: {
         h-full
         max-w-2xl
         items-center  
-        font-medium
+       
         '>
             {image &&
                 <div className='flex w-28 h-28 relative -top-14 mt-4'>
