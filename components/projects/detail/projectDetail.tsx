@@ -16,7 +16,7 @@ function DetailProject({ project: {
     return (
         <div className='flex 
         flex-col        
-        text-cyan-600 
+        text-cyan-700 
         bg-cyan-100 
         my-5  
         mt-12
