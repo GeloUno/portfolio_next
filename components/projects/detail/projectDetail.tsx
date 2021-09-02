@@ -25,7 +25,7 @@ function DetailProject({ project: {
         h-full
         max-w-2xl
         items-center  
-       
+        font-medium
         '>
             {image &&
                 <div className='flex w-28 h-28 relative -top-14 mt-4'>
@@ -67,7 +67,7 @@ function DetailProject({ project: {
                     )
                 })}
             </div>
-            <div className='flex flex-row bg-cyan-700 text-cyan-100  h-16 w-full rounded-b-lg justify-around items-center font-medium'>
+            <div className='flex flex-row bg-cyan-700 text-cyan-100  h-16 w-full rounded-b-lg justify-around items-center '>
                 {github &&
                     <Link href={``}>
                         <a
