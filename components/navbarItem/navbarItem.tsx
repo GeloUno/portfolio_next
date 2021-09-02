@@ -64,10 +64,10 @@ function NavbarItem({
             '>
                 {pathname === '/' && <Fragment>
                     <Link href='/'>
-                        <li className='h-5 text-blue-500 cursor-pointer'>Grzegorz</li>
+                        <div className='h-5 text-blue-500 cursor-pointer'>Grzegorz</div>
                     </Link>
                     <Link href='/'>
-                        <li className='h-5 text-fuchsia-500 cursor-pointer'>Kędziora</li>
+                        <div className='h-5 text-fuchsia-500 cursor-pointer'>Kędziora</div>
                     </Link>
                 </Fragment>
                 }
