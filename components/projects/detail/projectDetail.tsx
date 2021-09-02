@@ -36,6 +36,7 @@ function DetailProject({ project: {
                         // placeholder={'blur'}
                         // blurDataURL={`/images/projects/${image}`}
                         className='rounded-lg object-cover'
+                        alt={`Project image ${image}`}
                     />
                 </div>
             }
@@ -55,6 +56,7 @@ function DetailProject({ project: {
                                     src={`/images/technology/${tech}.svg`}
                                     height={32}
                                     width={32}
+                                    alt={`Technology image ${tech}`}
                                 />
                             </div>
                             <h3>

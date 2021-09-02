@@ -19,7 +19,7 @@ function FirstFourTechnologyImage({ technology }: IFirstFourTechnologyImageProps
                             src={`/images/technology/${tech}.svg`}
                             width={40}
                             height={40}
-                            alt={`${tech}`}
+                            alt={`technology image ${tech}`}
                         />
                     </div>
                 )
