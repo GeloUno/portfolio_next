@@ -37,8 +37,8 @@ function ProjectItem(
                 {image && (<Image
                     src={`/images/projects/${image}`}
                     alt={`image of project ${title}`}
-                    width={250}
-                    height={250}
+                    width={112}
+                    height={112}
                     className='rounded-l-lg object-cover'
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/${image}`}
@@ -46,8 +46,8 @@ function ProjectItem(
                 {!image && (<Image
                     src={`/images/projects/noImage.jpg`}
                     alt={`image of project ${title}`}
-                    width={250}
-                    height={250}
+                    width={112}
+                    height={112}
                     className='rounded-l-lg object-cover'
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/noImage.jpg`}
