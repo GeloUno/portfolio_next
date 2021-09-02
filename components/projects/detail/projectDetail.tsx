@@ -79,6 +79,7 @@ function DetailProject({ project: {
                                 <Image src='/icons/github.svg'
                                     height={100}
                                     width={100}
+                                    alt={`github icon link`}
                                 />
                             </div>
                         </a>
@@ -95,6 +96,7 @@ function DetailProject({ project: {
                                 <Image src='/icons/web.svg'
                                     height={100}
                                     width={100}
+                                    alt={`web icon link`}
                                 />
                             </div>
                         </a>
