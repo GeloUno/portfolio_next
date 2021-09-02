@@ -40,8 +40,8 @@ function ProjectItem(
                     width={250}
                     height={250}
                     className='rounded-l-lg object-cover'
-                    placeholder='blur'
-                    blurDataURL={`/images/projects/${image}`}
+                // placeholder='blur'
+                // blurDataURL={`/images/projects/${image}`}
                 />)}
                 {!image && (<Image
                     src={`/images/projects/noImage.jpg`}
@@ -49,8 +49,8 @@ function ProjectItem(
                     width={250}
                     height={250}
                     className='rounded-l-lg object-cover'
-                    placeholder='blur'
-                    blurDataURL={`/images/projects/noImage.jpg`}
+                // placeholder='blur'
+                // blurDataURL={`/images/projects/noImage.jpg`}
                 />)}
             </div>
             <div className='h-28 flex flex-col flex-grow  '>
