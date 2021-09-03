@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { classicNameResolver } from 'typescript';
 import classes from './menu.module.css'
 
 function Menu() {
@@ -27,7 +26,7 @@ function Menu() {
                     <div className={classes.myLink}>Projects</div>
                 </Link>
                 <Link href='/about'>
-                    <div className={classes.myLink}>About</div>
+                    <div className={classes.myLink}>About Me</div>
                 </Link>
                 <Link href='/contact'>
                     <div className={classes.myLink}>Contact</div>
