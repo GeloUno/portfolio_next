@@ -46,7 +46,7 @@ const contact =
 
         <p className='p-7 text-xs'>
             *if you have trouble sending an email.
-            For example: the email client doesn't open. Please make sure you have set your default client email in windows 10.
+            For example the email client doesn't want to open. Please make sure you have set your default email client in windows 10.
         </p>
     </div>
     )

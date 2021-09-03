@@ -35,7 +35,7 @@ const projects: Array<IProject> = [
     {
         title: "Hors Farm",
         description: [`This is a part of horse farm backend server in node.js.`,
-            `I started this project in TypeScript. This server connect to mongoDB using mongoose solution. Endpoints were tested by Postman. Classes and functionality have been tested by Jest. When I will back to this project I will add SuperTest.`, ` One of big solution is security of the users so not everything is shared to github, much more is in heroku server.`],
+            `I started this project in TypeScript. This server connect to mongoDB using mongoose solution. Endpoints were tested by Postman. Classes and functionality have been tested by Jest. When I go back to this project I will add SuperTest.`, ` One of big solution is security of the users so not everything is shared to github, much more is in heroku server.`],
         github: 'https://github.com/GeloUno/dev_server_node',
         image: 'SinginHorse.png',
         technology: [
@@ -52,7 +52,7 @@ const projects: Array<IProject> = [
     },
     {
         title: "Portfolio",
-        description: [`This project was built with the idea "nice to have it".`, ` So I built it simple and fast.`, ` I used next.js with static props and static path. This is not an e-commers project so no server side props solution was needed.`,
+        description: [`This project was built as "nice to have it" idea.`, ` So I built it simple and quickly.`, ` I used next.js with static props and static path. This is not an e-commers project so no server side props solution was needed.`,
             `Measure from Web.dev:`, ` Performance: 99%`, ` Accessibility: 100%,`, ` Best Practices: 100%,`, ` SEO: 100%`,
             `Core Node version 14.17 rest dependencies is in package.json.`],
         image: 'portfolio.png',
@@ -128,7 +128,7 @@ const projects: Array<IProject> = [
     },
     {
         title: "Other projects",
-        description: 'In my github you can find many projects since 2018. Not all are in the master or main branch. Most of these projects were not built with clean code principles. Some projects were written in Angular 6.0, Java, ReactNative, PHP',
+        description: 'In my github you can find many projects placed since 2018. Not all of them are in the master or main branch. Most of these projects were not built with clean code principles. Some of them were written in Angular 6.0, Java 9.0, ReactNative, PHP',
         github: 'https://github.com/GeloUno?tab=repositories',
         image: 'Octocat.png',
 
