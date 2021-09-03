@@ -10,7 +10,9 @@ function ErrorView({ description }: IErrorViewProps) {
             title="Something go wrong"
             switchHorizontalView={false}
         >
-            <div className='w-full h-full text-center text-4xl pt-32'>
+            <div
+                data-testid="bodyError"
+                className='w-full h-full text-center text-4xl pt-32'>
                 {description}
             </div>
         </Container>
