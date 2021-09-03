@@ -37,13 +37,6 @@ const contact =
             />
         </div>
 
-        {/* <Link href='#'>
-            <a href="mailto:geloke59@gmail.com?subject=Contact to make cooperation"
-                target='_blank'
-
-            > send imail</a>
-        </Link> */}
-
         <p className='p-7 text-xs'>
             *if you have trouble sending an email.
             For example the email client doesn't want to open. Please make sure you have set your default email client in windows 10.
