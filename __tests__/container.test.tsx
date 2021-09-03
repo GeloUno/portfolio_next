@@ -1,9 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react'
-
 import Container from '../components/shared/container';
-
-
 
 describe('Container', () => {
     const title = "some title"
@@ -49,7 +46,7 @@ describe('Container', () => {
             expect(result).toBeVisible()
         }
     );
-    it.only('should have children body in document'
+    it('should have children body in document'
         , async () => {
             const { getByTestId, debug } = render(<Container
                 children={childrenMock}
@@ -60,7 +57,7 @@ describe('Container', () => {
             expect(result).toBeVisible()
         }
     );
-    it.only(`the child's body should be visible`
+    it(`the child's body should be visible`
         , async () => {
             const { getByTestId, debug } = render(<Container
                 children={childrenMock}
