@@ -13,6 +13,7 @@ function swichIconMenu(
         return (
             <div>
                 <XIcon
+                    data-testid="closeMenu"
                     className={classes.myIcon}
                     onClick={handlerClickCloseMenu} />
             </div>
@@ -21,6 +22,7 @@ function swichIconMenu(
     return (
         <div>
             <MenuIcon
+                data-testid="openMenu"
                 className={classes.myIcon}
                 onClick={handlerClickOpenMenu} />
         </div>
@@ -41,7 +43,9 @@ function NavbarItem({
 }: INavbarItemProps) {
 
     return (
-        <nav className='
+        <nav
+            data-testid="navbaritemBody"
+            className='
         absolute 
         flex 
         flex-row 
@@ -54,7 +58,9 @@ function NavbarItem({
         content-center 
         w-full'>
 
-            <div className='
+            <div
+                data-testid="navbaritemContent"
+                className='
             flex 
             flex-col 
             h-20 
@@ -64,21 +70,28 @@ function NavbarItem({
             '>
                 {pathname === '/' && <Fragment>
                     <Link href='/'>
-                        <div className='h-5 text-blue-500 cursor-pointer'>Grzegorz</div>
+                        <div
+                            data-testid="firstNameContentLinkHomePage"
+                            className='h-5 text-blue-500 cursor-pointer'>Grzegorz</div>
                     </Link>
                     <Link href='/'>
-                        <div className='h-5 text-fuchsia-500 cursor-pointer'>Kędziora</div>
+                        <div
+                            data-testid="lastNameContentLinkHomePage"
+                            className='h-5 text-fuchsia-500 cursor-pointer'>Kędziora</div>
                     </Link>
                 </Fragment>
                 }
                 {pathname !== '/' && <Fragment>
                     <ArrowNarrowLeftIcon
+                        data-testid="ArrowGoBackLink"
                         className={`${classes.myIcon}`}
                         onClick={handlerClickGoBack} />
                 </Fragment>
                 }
             </div>
-            <div className='flex h-10 items-center text-xl'>
+            <div
+                data-testid="switchOpenCloseButton"
+                className='flex h-10 items-center text-xl'>
 
                 {swichIconMenu(
                     pathname,

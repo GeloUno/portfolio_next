@@ -3,7 +3,9 @@ import classes from './menu.module.css'
 
 function Menu() {
     return (
-        <div className='
+        <div
+            data-testid="menuBody"
+            className='
         min-h-screen        
         flex    
         justify-center         
@@ -20,16 +22,16 @@ function Menu() {
         text-3xl
        '>
                 <Link href='/'>
-                    <div className={classes.myLink}>Home</div>
+                    <div data-testid="menuLinkHome" className={classes.myLink}>Home</div>
                 </Link>
                 <Link href='/projects'>
-                    <div className={classes.myLink}>Projects</div>
+                    <div data-testid="menuLinkProjects" className={classes.myLink}>Projects</div>
                 </Link>
                 <Link href='/about'>
-                    <div className={classes.myLink}>About Me</div>
+                    <div data-testid="menuLinkAboutMe" className={classes.myLink}>About Me</div>
                 </Link>
                 <Link href='/contact'>
-                    <div className={classes.myLink}>Contact</div>
+                    <div data-testid="menuLinkContact" className={classes.myLink}>Contact</div>
                 </Link>
             </div>
         </div>
