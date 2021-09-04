@@ -20,5 +20,4 @@ describe('NavBar', () => {
         expect(render(<Navbar />)).toBeTruthy()
     })
 
-
 });
