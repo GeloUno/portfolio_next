@@ -12,7 +12,9 @@ function Container({
 }: IContainer) {
 
     return (
-        <div className={classes.myContainer}>
+        <div
+            data-testid="container"
+            className={classes.myContainer}>
             <div className='flex flex-col w-full h-full pt-20'>
                 <div className='flex flex-row w-full h-10 p-10 justify-end pr-20 bg-titlePageBackgroud bg-no-repeat bg-right-top bg-5rem bg-origin-content' >
                     <h3 className='pr-10 text-2xl'>
