@@ -2,10 +2,10 @@ import ProjectItem from "../item/projectItem";
 import { Fragment } from 'react';
 import { IProject } from '../../../models/IProject';
 
-interface IProjectslistProps {
+interface IProjectsListProps {
     projects: Array<IProject>
 }
-function Projectslist({ projects }: IProjectslistProps) {
+function ProjectsList({ projects }: IProjectsListProps) {
 
     return (
         <Fragment>
@@ -20,4 +20,4 @@ function Projectslist({ projects }: IProjectslistProps) {
         </Fragment>
     );
 }
-export default Projectslist;
+export default ProjectsList;
