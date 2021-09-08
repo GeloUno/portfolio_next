@@ -263,4 +263,247 @@ describe('projectDetail', () => {
             expect(result).toBeVisible()
         })
     })
+    describe('with one technology ', () => {
+
+        const projectMock: IProject = {
+            title: "Some Title Project",
+            description: "Example description project",
+            github: "www.github.com/example",
+            technology: [
+                ETechnology.ADOBEXD,
+                // ETechnology.ANGULAR,
+                // ETechnology.CYPRESSIO,
+                // ETechnology.ENZYME
+            ],
+
+        }
+
+        it(`should render`, () => {
+            expect(render(<DetailProject
+                project={projectMock}
+            />)).toBeTruthy()
+        })
+        it(`should be in document`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+        })
+        it(`should be visible`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+        })
+
+        it(`technologys project body should have four description`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+
+            const result = screen.getAllByTestId('DetailProjectImageDescription')
+            expect(result).toHaveLength(1)
+
+            result.forEach((res, index) => {
+                expect(res).toBeInTheDocument()
+                expect(res).toBeVisible()
+                expect(res).toHaveTextContent(projectMock.technology[index])
+            })
+        })
+    })
+    describe('with two technology ', () => {
+
+        const projectMock: IProject = {
+            title: "Some Title Project",
+            description: "Example description project",
+            github: "www.github.com/example",
+            technology: [
+                ETechnology.ADOBEXD,
+                ETechnology.ANGULAR,
+                // ETechnology.CYPRESSIO,
+                // ETechnology.ENZYME
+            ],
+
+        }
+
+        it(`should render`, () => {
+            expect(render(<DetailProject
+                project={projectMock}
+            />)).toBeTruthy()
+        })
+        it(`should be in document`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+        })
+        it(`should be visible`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+        })
+
+        it(`technologys project body should have four description`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+
+            const result = screen.getAllByTestId('DetailProjectImageDescription')
+            expect(result).toHaveLength(2)
+
+            result.forEach((res, index) => {
+                expect(res).toBeInTheDocument()
+                expect(res).toBeVisible()
+                expect(res).toHaveTextContent(projectMock.technology[index])
+            })
+        })
+    })
+    describe('with three technology ', () => {
+
+        const projectMock: IProject = {
+            title: "Some Title Project",
+            description: "Example description project",
+            github: "www.github.com/example",
+            technology: [
+                ETechnology.ADOBEXD,
+                ETechnology.ANGULAR,
+                ETechnology.CYPRESSIO,
+                // ETechnology.ENZYME
+            ],
+
+        }
+
+        it(`should render`, () => {
+            expect(render(<DetailProject
+                project={projectMock}
+            />)).toBeTruthy()
+        })
+        it(`should be in document`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+        })
+        it(`should be visible`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+        })
+
+        it(`technologys project body should have four description`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+
+            const result = screen.getAllByTestId('DetailProjectImageDescription')
+            expect(result).toHaveLength(3)
+
+            result.forEach((res, index) => {
+                expect(res).toBeInTheDocument()
+                expect(res).toBeVisible()
+                expect(res).toHaveTextContent(projectMock.technology[index])
+            })
+        })
+    })
+    describe('with five technology ', () => {
+
+        const projectMock: IProject = {
+            title: "Some Title Project",
+            description: "Example description project",
+            github: "www.github.com/example",
+            technology: [
+                ETechnology.ADOBEXD,
+                ETechnology.ANGULAR,
+                ETechnology.CYPRESSIO,
+                ETechnology.ENZYME,
+                ETechnology.EXPRESS,
+            ],
+
+        }
+
+        it(`should render`, () => {
+            expect(render(<DetailProject
+                project={projectMock}
+            />)).toBeTruthy()
+        })
+        it(`should be in document`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+        })
+        it(`should be visible`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+        })
+
+        it(`technologys project body should have four description`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+
+            const result = screen.getAllByTestId('DetailProjectImageDescription')
+            expect(result).toHaveLength(5)
+
+            result.forEach((res, index) => {
+                expect(res).toBeInTheDocument()
+                expect(res).toBeVisible()
+                expect(res).toHaveTextContent(projectMock.technology[index])
+            })
+        })
+    })
+    describe('with six technology ', () => {
+
+        const projectMock: IProject = {
+            title: "Some Title Project",
+            description: "Example description project",
+            github: "www.github.com/example",
+            technology: [
+                ETechnology.ADOBEXD,
+                ETechnology.ANGULAR,
+                ETechnology.CYPRESSIO,
+                ETechnology.ENZYME,
+                ETechnology.EXPRESS,
+                ETechnology.FIGMA
+            ],
+
+        }
+
+        it(`should render`, () => {
+            expect(render(<DetailProject
+                project={projectMock}
+            />)).toBeTruthy()
+        })
+        it(`should be in document`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+        })
+        it(`should be visible`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+        })
+
+        it(`technologys project body should have four description`, () => {
+            render(<DetailProject
+                project={projectMock}
+            />)
+
+            const result = screen.getAllByTestId('DetailProjectImageDescription')
+            expect(result).toHaveLength(6)
+
+            result.forEach((res, index) => {
+                expect(res).toBeInTheDocument()
+                expect(res).toBeVisible()
+                expect(res).toHaveTextContent(projectMock.technology[index])
+            })
+        })
+    })
 });
