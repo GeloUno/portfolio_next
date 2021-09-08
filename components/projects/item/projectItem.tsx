@@ -20,7 +20,9 @@ function ProjectItem(
 
     }, index }: IProjectItemProps) {
     return (
-        <div className='
+        <div
+            data-testid="ProjectItemContainer"
+            className='
         flex 
         flex-row        
         bg-cyan-700 
@@ -33,13 +35,16 @@ function ProjectItem(
         max-w-2xl
         font-medium        
         '>
-            <div className='h-32 w-28  rounded-l-lg  '>
+            <div
+                data-testid="ProjectItemBody"
+                className='h-32 w-28  rounded-l-lg  '>
                 {image && (<Image
                     src={`/images/projects/${image}`}
                     alt={`image of project ${title}`}
                     width={112}
                     height={128}
                     className='rounded-l-lg object-cover'
+                    data-testid="ProjectItemImage"
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/${image}`}
                 />)}
@@ -49,18 +54,25 @@ function ProjectItem(
                     width={112}
                     height={128}
                     className='rounded-l-lg object-cover'
+                    data-testid="ProjectItemNoImage"
                 // placeholder='blur'
                 // blurDataURL={`/images/projects/noImage.jpg`}
                 />)}
             </div>
             <div className='h-32 flex flex-col flex-grow p-1 '>
-                <div className='flex self-auto justify-center'>
+                <div
+                    data-testid="ProjectItemTitle"
+                    className='flex self-auto justify-center'>
                     {title}
                 </div>
-                <div className='flex flex-grow  items-center self-auto'>
+                <div
+                    data-testid="ProjectItemTechnologyImagesBody"
+                    className='flex flex-grow  items-center self-auto'>
                     <FirstFourTechnologyImage technology={technology} />
                 </div>
-                <div className='flex justify-end lowercase pr-6 pb-1'>
+                <div
+                    data-testid="ProjectItemLinkMore"
+                    className='flex justify-end lowercase pr-6 pb-1'>
                     <Link href={`/projects/${index}`}>
                         Read more...
                     </Link>
