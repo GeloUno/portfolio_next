@@ -1,9 +1,9 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
 import { ETechnology } from '../models/ETechnology';
 import { IProject } from '../models/IProject';
-import ProjectItem from '../components/projects/item/projectItem';
+
 import Projectslist from '../components/projects/list/projectslist';
 
 
