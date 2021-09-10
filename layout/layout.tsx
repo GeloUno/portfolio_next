@@ -16,7 +16,9 @@ function LayoutPage({ children }: ILayoutPageProps) {
                 <meta name='keywords' content='react, next, node, developer, fullstack, web builder,' />
             </Head>
             <Navbar />
-            <main>{children}</main>
+            <main
+                data-testid="LayoutChildren"
+            >{children}</main>
         </Fragment>
     );
 }
