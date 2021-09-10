@@ -15,7 +15,7 @@ function DetailProject({ project: {
 } }: IDetailProjectProps) {
     return (
         <div
-            data-testid="DetailProjectContainer"
+            data-testid="DetailProjectComponent"
             className='flex 
         flex-col        
         text-cyan-700 

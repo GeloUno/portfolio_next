@@ -38,7 +38,7 @@ describe('projectItem', () => {
                 index={0}
             />)
 
-            const result = screen.getByTestId('ProjectItemContainer')
+            const result = screen.getByTestId('ProjectItemComponent')
             expect(result).toBeInTheDocument()
         })
         it(`should be visible`, () => {
@@ -47,7 +47,7 @@ describe('projectItem', () => {
                 index={0}
             />)
 
-            const result = screen.getByTestId('ProjectItemContainer')
+            const result = screen.getByTestId('ProjectItemComponent')
             expect(result).toBeVisible()
         })
         it(`should have body`, () => {
@@ -187,7 +187,7 @@ describe('projectItem', () => {
                 index={0}
             />)
 
-            const result = screen.getByTestId('ProjectItemContainer')
+            const result = screen.getByTestId('ProjectItemComponent')
             expect(result).toBeInTheDocument()
         })
         it(`should be visible`, () => {
@@ -196,7 +196,7 @@ describe('projectItem', () => {
                 index={0}
             />)
 
-            const result = screen.getByTestId('ProjectItemContainer')
+            const result = screen.getByTestId('ProjectItemComponent')
             expect(result).toBeVisible()
         })
         it(`should have body`, () => {

@@ -36,13 +36,13 @@ describe('projectDetail', () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeTruthy()
         })
         it(`should be visible`, () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeVisible()
         })
         it(`should not have image project visible`, () => {
             render(<DetailProject
@@ -163,13 +163,13 @@ describe('projectDetail', () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeTruthy()
         })
         it(`should be visible`, () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeVisible()
         })
         it(`should  have image project visible`, () => {
             render(<DetailProject
@@ -287,13 +287,13 @@ describe('projectDetail', () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeTruthy()
         })
         it(`should be visible`, () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeVisible()
         })
 
         it(`technologys project body should have four description`, () => {
@@ -335,13 +335,13 @@ describe('projectDetail', () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeTruthy()
         })
         it(`should be visible`, () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeVisible()
         })
 
         it(`technologys project body should have four description`, () => {
@@ -383,13 +383,13 @@ describe('projectDetail', () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeTruthy()
         })
         it(`should be visible`, () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeVisible()
         })
 
         it(`technologys project body should have four description`, () => {
@@ -432,13 +432,13 @@ describe('projectDetail', () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeTruthy()
         })
         it(`should be visible`, () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeVisible()
         })
 
         it(`technologys project body should have four description`, () => {
@@ -482,13 +482,13 @@ describe('projectDetail', () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeTruthy()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeTruthy()
         })
         it(`should be visible`, () => {
             render(<DetailProject
                 project={projectMock}
             />)
-            expect(screen.getByTestId('DetailProjectContainer')).toBeVisible()
+            expect(screen.getByTestId('DetailProjectComponent')).toBeVisible()
         })
 
         it(`technologys project body should have four description`, () => {

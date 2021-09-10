@@ -4,7 +4,7 @@ import Button, { ButtonClassEnum } from '../button/button';
 function HeaderDescription() {
     return (
         <div
-            data-testid="headerContainer"
+            data-testid="headerComponent"
             className='flex flex-col justify-center text-center min-w-screen min-h-screen max-w-md sm:max-w-3xl lg:max-w-5xl pt-48 '>
 
             <div className=' text-white'>
