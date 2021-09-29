@@ -21,7 +21,7 @@ function ProjectItem(
     }, index }: IProjectItemProps) {
     return (
         <div
-            data-testid="ProjectItemContainer"
+            data-testid="ProjectItemComponent"
             className='
         flex 
         flex-row        
