@@ -4,7 +4,7 @@ import { IProject } from '../models/IProject';
 
 const projects: Array<IProject> = [
     {
-        title: "Hors Farm",
+        title: "Horse Farm",
         description: [`This is one of my biggest projects. This project uses four servers: Frontend, Backend, Firebase Auth, and MongoDB.`,
             `This part is about the frontend.
             I started this project in JavaScript technology.`,
@@ -33,7 +33,7 @@ const projects: Array<IProject> = [
         web: 'https://gelouno.github.io/horse_farm/'
     },
     {
-        title: "Hors Farm",
+        title: "Horse Farm",
         description: [`This is a part of horse farm backend server in node.js.`,
             `I started this project in TypeScript. This server connect to mongoDB using mongoose solution. Endpoints were tested by Postman. Classes and functionality have been tested by Jest. When I go back to this project I will add SuperTest.`, ` One of big solution is security of the users so not everything is shared to github, much more is in heroku server.`],
         github: 'https://github.com/GeloUno/dev_server_node',
@@ -96,7 +96,7 @@ const projects: Array<IProject> = [
         web: ''
     },
     {
-        title: "miniFacbook",
+        title: "miniFacebook",
         description: 'This is a training project to learn about React.js',
         github: 'https://github.com/GeloUno/dev_client_react_redux_hooks',
         image: 'miniFacbook.jpg',
@@ -111,7 +111,7 @@ const projects: Array<IProject> = [
         web: ''
     },
     {
-        title: "miniFacbook",
+        title: "miniFacebook",
         description: 'this is a training project to learn about Node.js.',
         github: 'https://github.com/GeloUno/dev_server_node',
         image: 'miniFacbook.jpg',
