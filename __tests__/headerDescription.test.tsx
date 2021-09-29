@@ -13,11 +13,11 @@ describe('headerDescription', () => {
     });
     it('should be in document', () => {
         render(<HeaderDescription />)
-        expect(screen.getByTestId('headerContainer')).toBeInTheDocument()
+        expect(screen.getByTestId('headerComponent')).toBeInTheDocument()
     });
     it('should be visible', async () => {
         render(<HeaderDescription />)
-        expect(screen.getByTestId('headerContainer')).toBeVisible()
+        expect(screen.getByTestId('headerComponent')).toBeVisible()
     });
     it('should have first description', async () => {
         render(<HeaderDescription />)
