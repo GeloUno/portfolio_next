@@ -96,7 +96,7 @@ const projects: Array<IProject> = [
         web: ''
     },
     {
-        title: "miniFacebook",
+        title: "mini Facebook",
         description: 'This is a training project to learn about React.js',
         github: 'https://github.com/GeloUno/dev_client_react_redux_hooks',
         image: 'miniFacbook.jpg',
@@ -111,7 +111,7 @@ const projects: Array<IProject> = [
         web: ''
     },
     {
-        title: "miniFacebook",
+        title: "mini Facebook",
         description: 'this is a training project to learn about Node.js.',
         github: 'https://github.com/GeloUno/dev_server_node',
         image: 'miniFacbook.jpg',
@@ -127,7 +127,7 @@ const projects: Array<IProject> = [
         web: ''
     },
     {
-        title: "Other projects",
+        title: "GitHub",
         description: 'In my github you can find many projects placed since 2018. Not all of them are in the master or main branch. Most of these projects were not built with clean code principles. Some of them were written in Angular 6.0, Java 9.0, ReactNative, PHP',
         github: 'https://github.com/GeloUno?tab=repositories',
         image: 'Octocat.png',
