@@ -84,7 +84,7 @@ const projects: Array<IProject> = [
     {
         title: "Next Auth",
         description: 'This is a training project to learn about Next.js and NextAuth.js. The training was conducted in JavaScript technology. On my part, the project was written in the MVC design pattern and TypeScript. Core Node version 14.17 rest dependencies is in package.json.',
-        github: 'https://github.com/GeloUno/next_auth',
+        github: 'https://gk.vercel.app/',
         image: 'NextAuth.png',
 
         technology: [
