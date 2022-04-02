@@ -1,2 +1,2 @@
-# Next.js + Tailwind CSS Example + TypeScript
+# Next.js + Tailwind CSS + TypeScript
 
