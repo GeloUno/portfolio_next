@@ -48,8 +48,8 @@ function HeaderDescription() {
       <div className="flex flex-col">
         <Button
           classButton={ButtonClassEnum.PRIMARY}
-          labelButton="Projects"
-          link="/projects"
+          labelButton="Jobs"
+          link="/jobs"
           className="w-1/2 sm:w-1/3 self-center my-10"
         />
         <Button

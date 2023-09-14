@@ -10,7 +10,7 @@ interface IProjectsPageProps {
 
 function ProjectsPage({ projects }: IProjectsPageProps) {
   return (
-    <Container title={'List of private projects'} switchHorizontalView={false}>
+    <Container title={'Private projects'} switchHorizontalView={false}>
       <Projectslist projects={projects} />
     </Container>
   );
