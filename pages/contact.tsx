@@ -31,12 +31,14 @@ const contact = (
         icon="linkedin"
         link="https://www.linkedin.com/in/grzegorz-k%C4%99dziora-6b7374147/"
         cyrcle
+        openiInNewTab
       />
       <Button
         classButton={ButtonClassEnum.PRIMARY}
         icon="github"
         link="https://github.com/GeloUno"
         cyrcle
+        openiInNewTab
       />
       <Button
         classButton={ButtonClassEnum.PRIMARY}

@@ -22,6 +22,7 @@ export interface IButtonProps {
   mailto?: IMailTo;
   icon?: 'linkedin' | 'mail' | 'github';
   cyrcle?: boolean;
+  openiInNewTab?: boolean;
 }
 
 function Button({
@@ -33,6 +34,7 @@ function Button({
   mailto,
   icon,
   cyrcle,
+  openiInNewTab,
 }: IButtonProps) {
   function onClickHandler(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
@@ -73,6 +75,7 @@ function Button({
           className={`${cyrcle ? classes.mybtncyrcle : classes.mybtn} ${
             classes[classButton]
           } ${className ? className : ''} `}
+          target={openiInNewTab ? '_blank' : '_self'}
         >
           {icon && (
             <Image
