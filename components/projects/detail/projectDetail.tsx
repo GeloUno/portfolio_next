@@ -34,8 +34,6 @@ function DetailProject({
             src={`/images/projects/${image}`}
             width={112}
             height={112}
-            // placeholder={'blur'}
-            // blurDataURL={`/images/projects/${image}`}
             className="rounded-lg object-cover"
             alt={`Project image ${image}`}
           />
