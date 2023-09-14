@@ -1,6 +1,9 @@
 .mybtn {
     @apply rounded-full border-4 m-4 cursor-pointer text-center py-1 px-12 font-sans text-lg text-gray-100
 }
+.mybtncyrcle {
+    @apply rounded-full border-4 cursor-pointer text-center p-2 py-1 pt-2 m-4 font-sans text-lg text-gray-100
+}
 
 .myBtnColorPrimary {
     @apply bg-blue-600 border-blue-600 hover:bg-blue-700 hover:border-blue-700 m-4 transition ease-in-out duration-500
