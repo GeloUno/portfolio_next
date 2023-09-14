@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { HTMLAttributes } from 'react';
 import classes from './button.module.css';
 import Image from 'next/image';
 
@@ -33,7 +34,6 @@ function Button({
   mailto,
   icon,
   cyrcle,
-  openiInNewTab,
 }: IButtonProps) {
   function onClickHandler(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
@@ -58,6 +58,7 @@ function Button({
               width={25}
               height={25}
               className="mybtn"
+              style={{ display: 'list-item' }}
             />
           )}
           {labelButton && labelButton}
@@ -73,9 +74,15 @@ function Button({
           className={`${cyrcle ? classes.mybtncyrcle : classes.mybtn} ${
             classes[classButton]
           } ${className ? className : ''} `}
-          target={openiInNewTab ? '_blank' : '_self'}
         >
-          {icon && <Image src={`/icons/${icon}.svg`} width={25} height={25} />}
+          {icon && (
+            <Image
+              src={`/icons/${icon}.svg`}
+              width={25}
+              height={25}
+              style={{ display: 'list-item' }}
+            />
+          )}
           {labelButton && labelButton}
         </a>
       </Link>
